@@ -37,3 +37,23 @@ arrayHasElement(array1, valueToCheck1);
 arrayHasElement(array2, valueToCheck1);
 arrayHasElement(array1, valueToCheck2);
 arrayHasElement(['ala', 'bala', 'portocala'], 'ala');
+
+
+// functie cu parametri si return
+function removeEvenNumbers(arrayToModify) {
+    const newArray = [];
+
+    for (const num of arrayToModify) {
+        if (num % 2 > 0) {
+            newArray.push(num);
+        }
+    }
+
+    return newArray;
+}
+
+const arra1Modified = removeEvenNumbers(array1);
+console.log(`Modified array1 is : ${array1Modified}`);
+
+const array2Modified = removeEvenNumbers(array2);
+console.log(`Modified array1 is : ${array2Modified}`);
