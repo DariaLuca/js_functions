@@ -120,3 +120,31 @@ const doubled2 = arrayToMap.map(function (e1) {
     return e1 * 2;
 });
 console.log(`doubled2: ${doubled2}`);
+
+
+// arrow functions (functii sageata)
+
+const sayHello = () => {
+    console.log('hello');
+};
+
+sayHello();
+
+const sayHelloTo = (personName) => {
+    console.log(`Hello ${personName}`);
+};
+
+sayHelloTo('Razvan');
+
+const getGreetings = (greetedPerson) => {
+    return `Greetings ${greetedPerson}!`
+};
+
+let greeting = getGreetings('John');
+console.log(greetings);
+greeting = getGreetings('Maria');
+console.log(greeting);
+
+
+const doubled3 = arrayToMap.map(el => el * 2);
+console.log(`doubled3: ${doubled3}`);
